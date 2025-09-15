@@ -12,7 +12,10 @@ const app = express();
 
 app.use(cors({
   origin: ["https://match-wise-ai-yude.vercel.app/", "http://localhost:3000"], // replace with your actual Vercel frontend URL
+  methods: ["GET", "POST"],
+
   credentials: true
+
 }));
 
 app.use(express.json());
